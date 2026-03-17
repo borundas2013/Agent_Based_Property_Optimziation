@@ -1,0 +1,100 @@
+{
+  "initial_result": {
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+    "target_tg": 100,
+    "target_er": 28,
+    "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+    "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+    "chemical_validity": [
+      true,
+      "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+      "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N"
+    ],
+    "group_validity": false,
+    "group_validity_partial": false,
+    "property_details": {
+      "tg_target": 100.0,
+      "er_target": 28.0,
+      "predicted_tg": 113.0,
+      "predicted_er": 23.67,
+      "dtg": 13.0,
+      "der": 4.33,
+      "tol_tg": 10,
+      "tol_er": 5,
+      "ratio_1": 0.9,
+      "ratio_2": 0.1
+    },
+    "is_agent_call_needed": true
+  },
+  "final_best_result": {
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+    "target_tg": 100,
+    "target_er": 28,
+    "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)C3CCCCC3",
+    "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+    "property_details": {
+      "tg_target": 100,
+      "er_target": 28,
+      "predicted_tg": 99.07,
+      "predicted_er": 32.51,
+      "dtg": 0.93,
+      "der": 4.51,
+      "tol_tg": 10,
+      "tol_er": 5,
+      "ratio_1": 0.5,
+      "ratio_2": 0.5
+    },
+    "revision_summary": "To lower Tg with minimal change, one aromatic phenyl ring in monomer 1 was replaced by a cyclohexyl (aliphatic) group, increasing local flexibility and reducing backbone rigidity; monomer 2 was left unchanged to preserve the matched recovery stress.",
+    "is_agent_call_needed": false
+  },
+  "all_candidates": [
+    {
+      "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+      "target_tg": 100,
+      "target_er": 28,
+      "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+      "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+      "chemical_validity": [
+        true,
+        "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+        "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N"
+      ],
+      "group_validity": false,
+      "group_validity_partial": false,
+      "property_details": {
+        "tg_target": 100.0,
+        "er_target": 28.0,
+        "predicted_tg": 113.0,
+        "predicted_er": 23.67,
+        "dtg": 13.0,
+        "der": 4.33,
+        "tol_tg": 10,
+        "tol_er": 5,
+        "ratio_1": 0.9,
+        "ratio_2": 0.1
+      },
+      "is_agent_call_needed": true
+    },
+    {
+      "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+      "target_tg": 100,
+      "target_er": 28,
+      "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)C3CCCCC3",
+      "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+      "property_details": {
+        "tg_target": 100,
+        "er_target": 28,
+        "predicted_tg": 99.07,
+        "predicted_er": 32.51,
+        "dtg": 0.93,
+        "der": 4.51,
+        "tol_tg": 10,
+        "tol_er": 5,
+        "ratio_1": 0.5,
+        "ratio_2": 0.5
+      },
+      "revision_summary": "To lower Tg with minimal change, one aromatic phenyl ring in monomer 1 was replaced by a cyclohexyl (aliphatic) group, increasing local flexibility and reducing backbone rigidity; monomer 2 was left unchanged to preserve the matched recovery stress.",
+      "is_agent_call_needed": false
+    }
+  ]
+}

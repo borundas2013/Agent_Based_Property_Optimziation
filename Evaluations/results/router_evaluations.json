@@ -1,0 +1,168 @@
+{
+  "initial_result": {
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+    "target_tg": 175,
+    "target_er": 40,
+    "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+    "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+    "chemical_validity": [
+      true,
+      "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+      "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N"
+    ],
+    "group_validity": false,
+    "property_details": {
+      "tg_target": 175.0,
+      "er_target": 40.0,
+      "predicted_tg": 113.0,
+      "predicted_er": 23.67,
+      "dtg": 62.0,
+      "der": 16.33,
+      "tol_tg": 10,
+      "tol_er": 5,
+      "ratio_1": 0.9,
+      "ratio_2": 0.1
+    },
+    "is_agent_call_needed": true
+  },
+  "final_best_result": {
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+    "target_tg": 175,
+    "target_er": 40,
+    "monomer_1": "C=C(C)C(=O)Oc1ccc(C(C)(C)c2ccc(OC(=O)C(=C)C)cc2)cc1",
+    "monomer_2": "C=C(C)C(=O)Oc1ccc(OC(=O)C(=C)C)cc1",
+    "property_details": {
+      "tg_target": 175,
+      "er_target": 40,
+      "predicted_tg": 155.75,
+      "predicted_er": 28.91,
+      "dtg": 19.25,
+      "der": 11.09,
+      "tol_tg": 10,
+      "tol_er": 5,
+      "ratio_1": 0.7,
+      "ratio_2": 0.3
+    },
+    "revision_summary": "TG-first revision: converted the flexible ether/diol substituents into methacrylate ester groups to markedly increase backbone rigidity, aromatic content and crosslinking potential. Monomer 1 retains the original bis-phenyl tertiary core but replaces the flexible OCC1CO1 units with methacrylate esters (increasing Tg and enabling higher network crosslink density to raise Er). Monomer 2 was changed from a long flexible polyether to a rigid aromatic bis-methacrylate comonomer to further increase rigidity and crosslink density. Changes prioritize raising Tg (large deficit) while also increasing Er; both monomers remain polymerizable and suitable for thermoset shape-memory networks.",
+    "analysis": {},
+    "validation_details": {
+      "valid": true,
+      "errors": [],
+      "canonical": {
+        "monomer_1": "C=C(C)C(=O)Oc1ccc(C(C)(C)c2ccc(OC(=O)C(=C)C)cc2)cc1",
+        "monomer_2": "C=C(C)C(=O)Oc1ccc(OC(=O)C(=C)C)cc1"
+      }
+    },
+    "is_agent_call_needed": true
+  },
+  "all_candidates": [
+    {
+      "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+      "target_tg": 175,
+      "target_er": 40,
+      "monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+      "monomer_2": "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N",
+      "chemical_validity": [
+        true,
+        "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+        "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N"
+      ],
+      "group_validity": false,
+      "property_details": {
+        "tg_target": 175.0,
+        "er_target": 40.0,
+        "predicted_tg": 113.0,
+        "predicted_er": 23.67,
+        "dtg": 62.0,
+        "der": 16.33,
+        "tol_tg": 10,
+        "tol_er": 5,
+        "ratio_1": 0.9,
+        "ratio_2": 0.1
+      },
+      "is_agent_call_needed": true
+    },
+    {
+      "status": "validation_failed_after_retry",
+      "accepted": false,
+      "reason": "No Reaction Constraints. Both monomers should have compatibale functional groupssuch as vinyl-vinyl, epoxy-imine, imine-epoxy, thiol-vinyl, hydroxyl-vinyl, acrylate-vinyl, etc.",
+      "raw_response": "{\n  \"revised_monomer_1\": \"CC(C)(C1=CC=C(C=C1)O)C2=CC=C(C=C2)O\",\n  \"revised_monomer_2\": \"Nc1ccc(cc1)Cc2ccc(cc2)N\",\n  \"revision_summary\": \"Priority: raise Tg (tg_first). Monomer 1 revised from flexible bis-aryl with oxy-ether pendants to a more rigid, highly aromatic bisphenol (bisphenol A-like) to increase backbone rigidity, aromatic content and intermolecular interactions, which should substantially raise Tg. Phenolic OH groups are preserved to retain reactive functionality for thermoset formation. Monomer 2 changed from a long flexible polyol/amine oligomer to a rigid aromatic diamine (4,4'-methylenedianiline-type) to increase stiffness and provide strong curing/crosslinking capability, raising both Tg and recovery stress (Er). Changes prioritize Tg improvement while also increasing Er; both monomers remain chemically reasonable and maintain polymerizable/reactive functional groups (OH and NH2).\"\n}",
+      "repair_response": "{\n  \"revised_monomer_1\": \"CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4\",\n  \"revised_monomer_2\": \"Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N\",\n  \"revision_summary\": \"Restored epoxy-functionalized bisphenol A derivative for monomer 1 (reverted to original diglycidyl-like bis-aryl structure: CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4) so the pair has epoxy groups compatible with amine curing. Replaced the simple aromatic diamine with a more rigid 4,4'-sulfonyldianiline (Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N) to increase backbone rigidity, aromaticity and crosslinking efficiency. These changes address the validation error (epoxy–amine reaction pair), follow tg_first by increasing Tg via added rigidity/aromatic/sulfone link, and also increase Er by preserving strong primary-amine curing functionality while raising network stiffness.\"\n}",
+      "parsed_candidate": {
+        "revised_monomer_1": "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4",
+        "revised_monomer_2": "Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N",
+        "revision_summary": "Restored epoxy-functionalized bisphenol A derivative for monomer 1 (reverted to original diglycidyl-like bis-aryl structure: CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4) so the pair has epoxy groups compatible with amine curing. Replaced the simple aromatic diamine with a more rigid 4,4'-sulfonyldianiline (Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N) to increase backbone rigidity, aromaticity and crosslinking efficiency. These changes address the validation error (epoxy–amine reaction pair), follow tg_first by increasing Tg via added rigidity/aromatic/sulfone link, and also increase Er by preserving strong primary-amine curing functionality while raising network stiffness."
+      },
+      "validation": {
+        "valid": false,
+        "errors": [
+          "No Reaction Constraints. Both monomers should have compatibale functional groupssuch as vinyl-vinyl, epoxy-imine, imine-epoxy, thiol-vinyl, hydroxyl-vinyl, acrylate-vinyl, etc."
+        ],
+        "canonical": {
+          "monomer_1": "CC(C)(c1ccc(OCC2CO2)cc1)c1ccc(OCC2CO2)cc1",
+          "monomer_2": "Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1"
+        }
+      }
+    },
+    {
+      "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+      "target_tg": 175,
+      "target_er": 40,
+      "monomer_1": "C=C(C)C(=O)Oc1ccc(C(C)(C)c2ccc(OC(=O)C(=C)C)cc2)cc1",
+      "monomer_2": "C=C(C)C(=O)Oc1ccc(OC(=O)C(=C)C)cc1",
+      "property_details": {
+        "tg_target": 175,
+        "er_target": 40,
+        "predicted_tg": 155.75,
+        "predicted_er": 28.91,
+        "dtg": 19.25,
+        "der": 11.09,
+        "tol_tg": 10,
+        "tol_er": 5,
+        "ratio_1": 0.7,
+        "ratio_2": 0.3
+      },
+      "revision_summary": "TG-first revision: converted the flexible ether/diol substituents into methacrylate ester groups to markedly increase backbone rigidity, aromatic content and crosslinking potential. Monomer 1 retains the original bis-phenyl tertiary core but replaces the flexible OCC1CO1 units with methacrylate esters (increasing Tg and enabling higher network crosslink density to raise Er). Monomer 2 was changed from a long flexible polyether to a rigid aromatic bis-methacrylate comonomer to further increase rigidity and crosslink density. Changes prioritize raising Tg (large deficit) while also increasing Er; both monomers remain polymerizable and suitable for thermoset shape-memory networks.",
+      "analysis": {},
+      "validation_details": {
+        "valid": true,
+        "errors": [],
+        "canonical": {
+          "monomer_1": "C=C(C)C(=O)Oc1ccc(C(C)(C)c2ccc(OC(=O)C(=C)C)cc2)cc1",
+          "monomer_2": "C=C(C)C(=O)Oc1ccc(OC(=O)C(=C)C)cc1"
+        }
+      },
+      "is_agent_call_needed": true
+    },
+    {
+      "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 100 °C and a recovery stress of 28 MPa.",
+      "target_tg": 175,
+      "target_er": 40,
+      "monomer_1": "C=C(C)C(=O)Oc1ccc(-c2ccc(OC(=O)C(=C)C)cc2)cc1",
+      "monomer_2": "C=C(C)C(=O)Oc1cc(OC(=O)C(=C)C)cc(OC(=O)C(=C)C)c1",
+      "property_details": {
+        "tg_target": 175,
+        "er_target": 40,
+        "predicted_tg": 157.36,
+        "predicted_er": 24.1,
+        "dtg": 17.64,
+        "der": 15.9,
+        "tol_tg": 10,
+        "tol_er": 5,
+        "ratio_1": 0.7,
+        "ratio_2": 0.3
+      },
+      "revision_summary": "Monomer 1: replaced the flexible tertiary-alkyl phenyl linker with a direct biphenyl connection to increase backbone rigidity and aromatic content, raising Tg while preserving both methacrylate polymerizable groups. Monomer 2: converted to a 1,3,5-tris(methacryloyloxy)benzene motif (three aromatic methacrylate esters) to increase crosslinking functionality and rigidity, prioritizing recovery stress (Er) while also contributing to higher Tg. Both monomers retain methacrylate polymerizable functionality and are chemically plausible for thermoset SMHP design.",
+      "analysis": {},
+      "validation_details": {
+        "valid": true,
+        "errors": [],
+        "canonical": {
+          "monomer_1": "C=C(C)C(=O)Oc1ccc(-c2ccc(OC(=O)C(=C)C)cc2)cc1",
+          "monomer_2": "C=C(C)C(=O)Oc1cc(OC(=O)C(=C)C)cc(OC(=O)C(=C)C)c1"
+        }
+      },
+      "is_agent_call_needed": true
+    }
+  ]
+}

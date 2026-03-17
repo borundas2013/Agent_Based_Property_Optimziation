@@ -1,0 +1,1502 @@
+[
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 114,
+    "target_er": 30,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 114 °C and a recovery stress of 30 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 150,
+    "target_er": 34,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 150 °C and Er ≈ 34 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 107,
+    "target_er": 38,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 107 °C and Er ≈ 38 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 134,
+    "target_er": 25,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 134 °C and a recovery stress of 25 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 155,
+    "target_er": 29,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 155 °C and Er ≈ 29 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 121,
+    "target_er": 27,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 121 °C and a recovery stress of 27 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 124,
+    "target_er": 18,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 124 °C and a recovery stress of 18 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 102,
+    "target_er": 36,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 102 °C and a recovery stress of 36 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 135,
+    "target_er": 29,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 135 °C and Er ≈ 29 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 118,
+    "target_er": 30,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 118 °C and Er ≈ 30 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 126,
+    "target_er": 25,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 126 °C and Er ≈ 25 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 121,
+    "target_er": 31,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 121 °C and a recovery stress of 31 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 124,
+    "target_er": 21,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 124 °C and a recovery stress of 21 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 98,
+    "target_er": 41,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 98 °C and Er ≈ 41 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 131,
+    "target_er": 35,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 131 °C and Er ≈ 35 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 112,
+    "target_er": 20,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 112 °C and a recovery stress of 20 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 140,
+    "target_er": 30,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 140 °C and a recovery stress of 30 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 101,
+    "target_er": 40,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 101 °C and Er ≈ 40 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 105,
+    "target_er": 36,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 105 °C and Er ≈ 36 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 111,
+    "target_er": 22,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 111 °C and Er ≈ 22 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 150,
+    "target_er": 36,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 150 °C and a recovery stress of 36 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 116,
+    "target_er": 29,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 116 °C and a recovery stress of 29 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 87,
+    "target_er": 21,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 87 °C and Er ≈ 21 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 211,
+    "target_er": 62,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 211 °C and a recovery stress of 62 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 170,
+    "target_er": 79,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 170 °C and Er ≈ 79 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 220,
+    "target_er": 72,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 220 °C and a recovery stress of 72 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 201,
+    "target_er": 66,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 201 °C and Er ≈ 66 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 229,
+    "target_er": 65,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 229 °C and a recovery stress of 65 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 214,
+    "target_er": 51,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 214 °C and Er ≈ 51 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 198,
+    "target_er": 68,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 198 °C and Er ≈ 68 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 213,
+    "target_er": 60,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 213 °C and Er ≈ 60 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 199,
+    "target_er": 61,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 199 °C and a recovery stress of 61 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 192,
+    "target_er": 64,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 192 °C and a recovery stress of 64 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 216,
+    "target_er": 55,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 216 °C and Er ≈ 55 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 226,
+    "target_er": 57,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 226 °C and Er ≈ 57 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 213,
+    "target_er": 79,
+    "prompt": "Generate two monomers suitable for a thermoset shape-memory polymer with a target glass-transition temperature of 213 °C and a recovery stress of 79 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 274,
+    "target_er": 108,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 274 °C and Er ≈ 108 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 288,
+    "target_er": 95,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 288 °C and Er ≈ 95 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 291,
+    "target_er": 123,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 291 °C and Er ≈ 123 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 289,
+    "target_er": 105,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 289 °C and Er ≈ 105 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 301,
+    "target_er": 128,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 301 °C and Er ≈ 128 MPa."
+  },
+  {
+    "category": "property",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": null,
+    "group2": null,
+    "target_tg": 299,
+    "target_er": 112,
+    "prompt": "Propose a two-monomer TSMP system that operates near Tg ≈ 299 °C and Er ≈ 112 MPa."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains acrylate(C=C(C=O))."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thioether(CS)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains thioether(CS) and the second contains epoxy(C1OC1)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains carboxyl(C(=O)O) and the second contains epoxy(C1OC1)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and thiol(CCS) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains hydroxyl(O)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and hydroxyl(O) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains imine(NC)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with epoxy(C1OC1) in one monomer and imine(NC) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with hydroxyl(O) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and thiol(CCS) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thiol(CCS)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains thiol(CCS) and the second contains vinlyl(C=C)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and thiol(CCS) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "acrylate(C=C(C=O))",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with acrylate(C=C(C=O)) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains imine(NC)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains acrylate(C=C(C=O))."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carbonyl(C=O)",
+    "group2": "imine(NC)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains carbonyl(C=O) and the second contains imine(NC)."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thiol(CCS)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with thiol(CCS) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with carboxyl(C(=O)O) in one monomer and epoxy(C1OC1) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and thiol(CCS) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains acrylate(C=C(C=O))."
+  },
+  {
+    "category": "group",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with imine(NC) in one monomer and epoxy(C1OC1) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains thiol(CCS)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains thioether(CS)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains imine(NC)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains imine(NC) and the second contains epoxy(C1OC1)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with hydroxyl(O) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and hydroxyl(O) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains thioether(CS)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "thioether(CS)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains thioether(CS) and the second contains epoxy(C1OC1)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "thiol(CCS)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains thiol(CCS) and the second contains vinlyl(C=C)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with hydroxyl(O) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and vinlyl(C=C) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains hydroxyl(O)."
+  },
+  {
+    "category": "group",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains epoxy(C1OC1) and the second contains thioether(CS)."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and hydroxyl(O) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains imine(NC) and the second contains epoxy(C1OC1)."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Design two monomers for a TSMP where the first contains vinlyl(C=C) and the second contains hydroxyl(O)."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with vinlyl(C=C) in one monomer and thiol(CCS) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "thioether(CS)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with thioether(CS) in one monomer and epoxy(C1OC1) in the other."
+  },
+  {
+    "category": "group",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "carbonyl(C=O)",
+    "target_tg": null,
+    "target_er": null,
+    "prompt": "Construct a thermoset shape memory polymer using groups, with imine(NC) in one monomer and carbonyl(C=O) in the other."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 121,
+    "target_er": 30,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 121 °C and Er ≈ 30 MPa, while satisfying the functional-group requirements imine(NC) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": 112,
+    "target_er": 21,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 112 °C and Er ≈ 21 MPa, while satisfying the functional-group requirements vinlyl(C=C) and acrylate(C=C(C=O))."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 134,
+    "target_er": 31,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 134 °C and Er = 31 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thiol(CCS)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 137,
+    "target_er": 33,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 137 °C and Er ≈ 33 MPa, while satisfying the functional-group requirements thiol(CCS) and vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "acrylate(C=C(C=O))",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 150,
+    "target_er": 24,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 150 °C and Er = 24 MPa, such that one monomer incorporates acrylate(C=C(C=O)) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 89,
+    "target_er": 20,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 89 °C and Er ≈ 20 MPa, while satisfying the functional-group requirements vinlyl(C=C) and vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 126,
+    "target_er": 43,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 126 °C and Er = 43 MPa, such that one monomer incorporates imine(NC) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 110,
+    "target_er": 33,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 110 °C and Er = 33 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carbonyl(C=O)",
+    "group2": "imine(NC)",
+    "target_tg": 142,
+    "target_er": 40,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 142 °C and Er = 40 MPa, such that one monomer incorporates carbonyl(C=O) and the other incorporates imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 104,
+    "target_er": 22,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 104 °C and Er = 22 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 130,
+    "target_er": 33,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 130 °C and Er = 33 MPa, such that one monomer incorporates imine(NC) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 94,
+    "target_er": 28,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 94 °C and Er = 28 MPa, such that one monomer incorporates hydroxyl(O) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 133,
+    "target_er": 38,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 133 °C and Er ≈ 38 MPa, while satisfying the functional-group requirements imine(NC) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": 119,
+    "target_er": 30,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 119 °C and Er ≈ 30 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and thioether(CS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 116,
+    "target_er": 34,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 116 °C and Er ≈ 34 MPa, while satisfying the functional-group requirements vinlyl(C=C) and thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 110,
+    "target_er": 13,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 110 °C and Er = 13 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 131,
+    "target_er": 37,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 131 °C and Er = 37 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carbonyl(C=O)",
+    "group2": "imine(NC)",
+    "target_tg": 138,
+    "target_er": 15,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 138 °C and Er = 15 MPa, such that one monomer incorporates carbonyl(C=O) and the other incorporates imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thioether(CS)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 145,
+    "target_er": 29,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 145 °C and Er ≈ 29 MPa, while satisfying the functional-group requirements thioether(CS) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 108,
+    "target_er": 23,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 108 °C and Er ≈ 23 MPa, while satisfying the functional-group requirements vinlyl(C=C) and hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 85,
+    "target_er": 28,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 85 °C and Er ≈ 28 MPa, while satisfying the functional-group requirements imine(NC) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 128,
+    "target_er": 32,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 128 °C and Er = 32 MPa, such that one monomer incorporates imine(NC) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 107,
+    "target_er": 15,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 107 °C and Er = 15 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 129,
+    "target_er": 35,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 129 °C and Er = 35 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 105,
+    "target_er": 19,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 105 °C and Er ≈ 19 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 109,
+    "target_er": 19,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 109 °C and Er = 19 MPa, such that one monomer incorporates carboxyl(C(=O)O) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "carbonyl(C=O)",
+    "target_tg": 142,
+    "target_er": 25,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 142 °C and Er ≈ 25 MPa, while satisfying the functional-group requirements imine(NC) and carbonyl(C=O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 150,
+    "target_er": 27,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 150 °C and Er = 27 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "carbonyl(C=O)",
+    "target_tg": 111,
+    "target_er": 20,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 111 °C and Er ≈ 20 MPa, while satisfying the functional-group requirements imine(NC) and carbonyl(C=O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 121,
+    "target_er": 36,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 121 °C and Er ≈ 36 MPa, while satisfying the functional-group requirements vinlyl(C=C) and thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 114,
+    "target_er": 32,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 114 °C and Er ≈ 32 MPa, while satisfying the functional-group requirements vinlyl(C=C) and thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thiol(CCS)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 102,
+    "target_er": 21,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 102 °C and Er = 21 MPa, such that one monomer incorporates thiol(CCS) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": 132,
+    "target_er": 24,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 132 °C and Er = 24 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 112,
+    "target_er": 34,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 112 °C and Er = 34 MPa, such that one monomer incorporates carboxyl(C(=O)O) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "acrylate(C=C(C=O))",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 122,
+    "target_er": 27,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 122 °C and Er = 27 MPa, such that one monomer incorporates acrylate(C=C(C=O)) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "thioether(CS)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 120,
+    "target_er": 22,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 120 °C and Er ≈ 22 MPa, while satisfying the functional-group requirements thioether(CS) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": 105,
+    "target_er": 27,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 105 °C and Er = 27 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates acrylate(C=C(C=O))."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "easy",
+    "method": "generate",
+    "group1": "acrylate(C=C(C=O))",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 125,
+    "target_er": 22,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 125 °C and Er = 22 MPa, such that one monomer incorporates acrylate(C=C(C=O)) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 198,
+    "target_er": 67,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 198 °C and Er ≈ 67 MPa, while satisfying the functional-group requirements imine(NC) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 222,
+    "target_er": 50,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 222 °C and Er ≈ 50 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 200,
+    "target_er": 61,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 200 °C and Er = 61 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 233,
+    "target_er": 54,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 233 °C and Er = 54 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 211,
+    "target_er": 79,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 211 °C and Er = 79 MPa, such that one monomer incorporates carboxyl(C(=O)O) and the other incorporates epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": 179,
+    "target_er": 53,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 179 °C and Er = 53 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates thioether(CS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 218,
+    "target_er": 63,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 218 °C and Er ≈ 63 MPa, while satisfying the functional-group requirements vinlyl(C=C) and hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "carbonyl(C=O)",
+    "group2": "imine(NC)",
+    "target_tg": 192,
+    "target_er": 50,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 192 °C and Er ≈ 50 MPa, while satisfying the functional-group requirements carbonyl(C=O) and imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "imine(NC)",
+    "target_tg": 203,
+    "target_er": 71,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 203 °C and Er ≈ 71 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 191,
+    "target_er": 60,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 191 °C and Er = 60 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 189,
+    "target_er": 75,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 189 °C and Er ≈ 75 MPa, while satisfying the functional-group requirements vinlyl(C=C) and hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 186,
+    "target_er": 72,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 186 °C and Er = 72 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 217,
+    "target_er": 79,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 217 °C and Er ≈ 79 MPa, while satisfying the functional-group requirements vinlyl(C=C) and hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": 195,
+    "target_er": 73,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 195 °C and Er ≈ 73 MPa, while satisfying the functional-group requirements vinlyl(C=C) and acrylate(C=C(C=O))."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "carbonyl(C=O)",
+    "group2": "imine(NC)",
+    "target_tg": 214,
+    "target_er": 80,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 214 °C and Er = 80 MPa, such that one monomer incorporates carbonyl(C=O) and the other incorporates imine(NC)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 169,
+    "target_er": 83,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 169 °C and Er ≈ 83 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "carboxyl(C(=O)O)",
+    "group2": "epoxy(C1OC1)",
+    "target_tg": 197,
+    "target_er": 72,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 197 °C and Er ≈ 72 MPa, while satisfying the functional-group requirements carboxyl(C(=O)O) and epoxy(C1OC1)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "medium",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 200,
+    "target_er": 77,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 200 °C and Er = 77 MPa, such that one monomer incorporates hydroxyl(O) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "thiol(CCS)",
+    "target_tg": 278,
+    "target_er": 96,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 278 °C and Er = 96 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates thiol(CCS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "thioether(CS)",
+    "target_tg": 307,
+    "target_er": 93,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 307 °C and Er ≈ 93 MPa, while satisfying the functional-group requirements epoxy(C1OC1) and thioether(CS)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "carbonyl(C=O)",
+    "target_tg": 282,
+    "target_er": 111,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 282 °C and Er ≈ 111 MPa, while satisfying the functional-group requirements imine(NC) and carbonyl(C=O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "hydroxyl(O)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 309,
+    "target_er": 97,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 309 °C and Er = 97 MPa, such that one monomer incorporates hydroxyl(O) and the other incorporates vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "imine(NC)",
+    "group2": "carbonyl(C=O)",
+    "target_tg": 283,
+    "target_er": 119,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 283 °C and Er = 119 MPa, such that one monomer incorporates imine(NC) and the other incorporates carbonyl(C=O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 257,
+    "target_er": 121,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 257 °C and Er = 121 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "hydroxyl(O)",
+    "target_tg": 275,
+    "target_er": 104,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 275 °C and Er ≈ 104 MPa, while satisfying the functional-group requirements vinlyl(C=C) and hydroxyl(O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "epoxy(C1OC1)",
+    "group2": "carboxyl(C(=O)O)",
+    "target_tg": 289,
+    "target_er": 104,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 289 °C and Er = 104 MPa, such that one monomer incorporates epoxy(C1OC1) and the other incorporates carboxyl(C(=O)O)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "vinlyl(C=C)",
+    "target_tg": 255,
+    "target_er": 116,
+    "prompt": "Generate two monomers for a TSMP with target properties Tg ≈ 255 °C and Er ≈ 116 MPa, while satisfying the functional-group requirements vinlyl(C=C) and vinlyl(C=C)."
+  },
+  {
+    "category": "mixed",
+    "difficulty": "hard",
+    "method": "generate",
+    "group1": "vinlyl(C=C)",
+    "group2": "acrylate(C=C(C=O))",
+    "target_tg": 285,
+    "target_er": 122,
+    "prompt": "Design a two-monomer thermoset shape-memory polymer targeting Tg = 285 °C and Er = 122 MPa, such that one monomer incorporates vinlyl(C=C) and the other incorporates acrylate(C=C(C=O))."
+  }
+]
