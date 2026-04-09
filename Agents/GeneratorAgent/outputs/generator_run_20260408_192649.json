@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 150,
+    "target_er": 75,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "c5cc(OCC1OC1)cc(OCC2OC2)c5",
+    "monomer2": "NCCNCCN",
+    "reason": "Monomer1 is 1,4-bis(glycidyloxy)benzene-like (aromatic core with two epoxide rings). It explicitly contains epoxide ring substrings (C1OC1 and C2OC2) to satisfy the required C1OC1 functionality and provides rigid, aromatic structure to raise Tg toward 150 °C and increase network stiffness (Er). Monomer2 is diethylenetriamine (NCCNCCN), a commercially-accessible amine curing agent that contains the NC motif at least twice (two distinct NC occurrences) and provides three reactive amine sites for high crosslink density. The epoxy (C1OC1/C2OC2) — amine (NC) pair is a compatible epoxy–amine thermoset chemistry, enabling efficient crosslinking. This combination (rigid aromatic diepoxide + multifunctional aliphatic amine) is synthesizable and optimized toward a high Tg (~150 °C) and elevated rubbery modulus (Er ~75 MPa) via aromatic content and high crosslink density.",
+    "predicted_tg": 157.83,
+    "predicted_er": 35.53,
+    "dtg": 7.83,
+    "der": 39.47,
+    "ratio_1": 0.3,
+    "ratio_2": 0.7,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C(COCC1OC1)(COCC2OC2)(COCC3OC3)C",
+    "monomer2": "NCCNCCNCCN",
+    "reason": "Updated to increase crosslink density and network rigidity to raise Er. Monomer1 is a trimethylolpropane-based triglycidyl ether (three C1OC1 epoxide rings present) to provide multiple epoxy reactive sites (C1OC1 appears three times). Monomer2 is triethylenetetramine (NCCNCCNCCN) providing four amine nitrogens (multiple NC sequences) to increase amine functionality per molecule and promote higher crosslinking with the epoxy groups. Together the higher epoxy functionality (monomer1) and increased amine functionality (monomer2) increase crosslink-supporting reactive site density compared with the previous design, addressing the low-Er feedback while maintaining epoxy–amine compatibility.",
+    "predicted_tg": 158.37,
+    "predicted_er": 65.77,
+    "dtg": 8.37,
+    "der": 9.23,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

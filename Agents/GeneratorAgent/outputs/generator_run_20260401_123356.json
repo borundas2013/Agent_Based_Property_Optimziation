@@ -1,0 +1,196 @@
+{
+  "meta": {
+    "target_tg": 80,
+    "target_er": 50,
+    "group1": "C1OC1",
+    "group2": "NC",
+    "model": "gpt-5-mini",
+    "max_iters": 3,
+    "saved_at": "2026-04-01T12:38:07"
+  },
+  "final_result": {
+    "monomer1": "C1OC1COCCOCCOCC2OC2",
+    "monomer2": "NCCNCCNCCN",
+    "reason": "Revised to fix high-Tg and reactivity issues. Monomer1 is a flexible diglycidyl (two epoxide rings: substrings C1OC1 and C2OC2) connected by ether-rich triethylene glycol linkers to lower Tg (adds flexibility/ether character) while providing two epoxy reactive sites to raise crosslinking potential. Monomer2 is a flexible polyamine (triethylenetetramine-like, contains multiple NC motifs at least twice) providing multiple nucleophilic N sites to react with the epoxides, increasing crosslink-supporting reactive site density and thus Er. Aromatic/rigid fragments from the previous design were removed to reduce predicted Tg toward the 80 °C target while keeping sufficient functionality to approach Er ≈ 50. This combination preserves epoxy–amine compatibility and increases crosslink density versus the prior design.",
+    "predicted_tg": 90.77,
+    "predicted_er": 28.26,
+    "dtg": 10.77,
+    "der": 21.74,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "within_property_tolerance": false
+  },
+  "property_prediction_full": {
+    "tg_target": 80.0,
+    "er_target": 50.0,
+    "predicted_tg": 90.77,
+    "predicted_er": 28.26,
+    "dtg": 10.77,
+    "der": 21.74,
+    "tol_tg": 10.0,
+    "tol_er": 5.0,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "over_tg": 0.7699999999999996,
+    "over_er": 16.74,
+    "within_tg_tolerance": false,
+    "within_er_tolerance": false,
+    "within_property_tolerance": false
+  },
+  "stopped_reason": "Reached max iterations (3)",
+  "history": [
+    {
+      "iteration": 0,
+      "mode": "initial",
+      "result": {
+        "monomer1": "c5ccc(cc5)OCC1OC1OCC2OC2",
+        "monomer2": "NCC1=CC(=CC=C1)CCN",
+        "reason": "Monomer1 is a para-bis(oxiran-2-ylmethyl)benzene-type diglycidyl ether (two oxirane rings shown as C1OC1 and C2OC2) providing at least two epoxide reactive sites and an aromatic core to raise Tg and crosslink rigidity. Monomer2 is m-xylylenediamine (1,3-bis(aminomethyl)benzene) with two primary amine termini (NC motifs appear twice) that will efficiently cure epoxides via epoxy-amine chemistry. The combination yields a moderately high Tg (~80°C target) from the rigid aromatic units and a moderate-to-high crosslink density (Er ≈ 50 MPa target) from the difunctional epoxy + difunctional amine network. Both SMILES are synthetically plausible and satisfy the required functional-group and reactivity constraints."
+      }
+    },
+    {
+      "iteration": 1,
+      "mode": "feedback",
+      "feedback_result": {
+        "needs_revision": true,
+        "is_valid": false,
+        "issue_codes": [
+          "TG_OUT_OF_RANGE"
+        ],
+        "issues": [
+          "Tg alignment failed: predicted Tg is too high. Target Tg = 80, predicted Tg = 92.98, absolute error = 12.98.",
+          "Best evaluated composition ratio was monomer1:monomer2 = 0.1:0.9."
+        ],
+        "suggestions": [
+          "Decrease Tg by introducing more flexible aliphatic or ether-rich linkers.",
+          "Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+        ],
+        "property_details": {
+          "tg_target": 80,
+          "er_target": 50,
+          "predicted_tg": 92.98,
+          "predicted_er": 41.51,
+          "dtg": 12.98,
+          "der": 8.49,
+          "tol_tg": 10.0,
+          "tol_er": 10.0,
+          "ratio_1": 0.1,
+          "ratio_2": 0.9,
+          "over_tg": 2.9800000000000004,
+          "over_er": 0.0,
+          "within_tg_tolerance": false,
+          "within_er_tolerance": true,
+          "within_property_tolerance": false
+        },
+        "optimization_mode": "tg_first",
+        "priority_property": "tg",
+        "feedback_text": "ISSUES DETECTED:\n- Tg alignment failed: predicted Tg is too high. Target Tg = 80, predicted Tg = 92.98, absolute error = 12.98.\n- Best evaluated composition ratio was monomer1:monomer2 = 0.1:0.9.\n\nSUGGESTED REVISION ACTIONS:\n- Decrease Tg by introducing more flexible aliphatic or ether-rich linkers.\n- Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+      }
+    },
+    {
+      "iteration": 1,
+      "mode": "revision",
+      "result": {
+        "monomer1": "C1OC1COCCOCCOCCOC2OC2",
+        "monomer2": "NCCNCCN",
+        "reason": "Replaced the prior aromatic diepoxide with a flexible, ether-rich bis-glycidyl (two epoxide rings: C1OC1 and C2OC2) to lower Tg (adds flexible PEG-like linkers) while keeping multiple epoxy sites for crosslinking. Monomer2 is diethylenetriamine (NCCNCCN) providing three reactive NC sites (amine groups) to increase crosslink density and Er via multiple epoxy–amine reactions. The epoxy (C1OC1/C2OC2) ↔ amine (NC) pair ensures compatibility; removing the aromatic unit addresses the high Tg error and the multifunctional amine increases network functionality to raise Er toward the target."
+      }
+    },
+    {
+      "iteration": 2,
+      "mode": "feedback",
+      "feedback_result": {
+        "needs_revision": true,
+        "is_valid": false,
+        "issue_codes": [
+          "ER_OUT_OF_RANGE"
+        ],
+        "issues": [
+          "Er alignment failed: predicted Er is too low. Target Er = 50, predicted Er = 35.02, absolute error = 14.98.",
+          "Best evaluated composition ratio was monomer1:monomer2 = 0.8:0.2."
+        ],
+        "suggestions": [
+          "Increase Tg by introducing more rigid, aromatic, cyclic, or polar motifs.",
+          "Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+        ],
+        "property_details": {
+          "tg_target": 80,
+          "er_target": 50,
+          "predicted_tg": 79.38,
+          "predicted_er": 35.02,
+          "dtg": 0.62,
+          "der": 14.98,
+          "tol_tg": 10.0,
+          "tol_er": 10.0,
+          "ratio_1": 0.8,
+          "ratio_2": 0.2,
+          "over_tg": 0.0,
+          "over_er": 4.98,
+          "within_tg_tolerance": true,
+          "within_er_tolerance": false,
+          "within_property_tolerance": false
+        },
+        "optimization_mode": "er_first",
+        "priority_property": "er",
+        "feedback_text": "ISSUES DETECTED:\n- Er alignment failed: predicted Er is too low. Target Er = 50, predicted Er = 35.02, absolute error = 14.98.\n- Best evaluated composition ratio was monomer1:monomer2 = 0.8:0.2.\n\nSUGGESTED REVISION ACTIONS:\n- Increase Tg by introducing more rigid, aromatic, cyclic, or polar motifs.\n- Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+      }
+    },
+    {
+      "iteration": 2,
+      "mode": "revision",
+      "result": {
+        "monomer1": "C1OC1COc2ccc(cc2)C(C)(C)c3ccc(OCOC4OC4)cc3",
+        "monomer2": "NCCc1ccccc1CCNCCN",
+        "reason": "Revised to increase rigidity and crosslink density: monomer1 is an aromatic bis(glycidyl) type (contains two epoxide rings: C1OC1 and C4OC4) built on a bisphenol-like rigid core to raise Tg; monomer2 is a multi-amine with an aromatic spacer (contains multiple NC motifs: 'NCC' and 'NCC' segments) to provide several reactive amine sites for epoxy curing, increasing crosslinking (Er). Both SMILES are chemically plausible and maintain epoxy (C1OC1)–amine (NC) compatibility; design addresses prior low Er by increasing reactive-site density and network rigidity while improving Tg toward target."
+      }
+    },
+    {
+      "iteration": 3,
+      "mode": "feedback",
+      "feedback_result": {
+        "needs_revision": true,
+        "is_valid": false,
+        "issue_codes": [
+          "TG_OUT_OF_RANGE"
+        ],
+        "issues": [
+          "Tg alignment failed: predicted Tg is too high. Target Tg = 80, predicted Tg = 130.08, absolute error = 50.08.",
+          "Best evaluated composition ratio was monomer1:monomer2 = 0.2:0.8."
+        ],
+        "suggestions": [
+          "Decrease Tg by introducing more flexible aliphatic or ether-rich linkers.",
+          "Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+        ],
+        "property_details": {
+          "tg_target": 80,
+          "er_target": 50,
+          "predicted_tg": 130.08,
+          "predicted_er": 42.01,
+          "dtg": 50.08,
+          "der": 7.99,
+          "tol_tg": 10.0,
+          "tol_er": 10.0,
+          "ratio_1": 0.2,
+          "ratio_2": 0.8,
+          "over_tg": 40.08,
+          "over_er": 0.0,
+          "within_tg_tolerance": false,
+          "within_er_tolerance": true,
+          "within_property_tolerance": false
+        },
+        "optimization_mode": "tg_first",
+        "priority_property": "tg",
+        "feedback_text": "ISSUES DETECTED:\n- Tg alignment failed: predicted Tg is too high. Target Tg = 80, predicted Tg = 130.08, absolute error = 50.08.\n- Best evaluated composition ratio was monomer1:monomer2 = 0.2:0.8.\n\nSUGGESTED REVISION ACTIONS:\n- Decrease Tg by introducing more flexible aliphatic or ether-rich linkers.\n- Increase Er by increasing crosslink-supporting reactive site density or network rigidity."
+      }
+    },
+    {
+      "iteration": 3,
+      "mode": "revision",
+      "result": {
+        "monomer1": "C1OC1COCCOCCOCC2OC2",
+        "monomer2": "NCCNCCNCCN",
+        "reason": "Revised to fix high-Tg and reactivity issues. Monomer1 is a flexible diglycidyl (two epoxide rings: substrings C1OC1 and C2OC2) connected by ether-rich triethylene glycol linkers to lower Tg (adds flexibility/ether character) while providing two epoxy reactive sites to raise crosslinking potential. Monomer2 is a flexible polyamine (triethylenetetramine-like, contains multiple NC motifs at least twice) providing multiple nucleophilic N sites to react with the epoxides, increasing crosslink-supporting reactive site density and thus Er. Aromatic/rigid fragments from the previous design were removed to reduce predicted Tg toward the 80 °C target while keeping sufficient functionality to approach Er ≈ 50. This combination preserves epoxy–amine compatibility and increases crosslink density versus the prior design."
+      }
+    }
+  ]
+}

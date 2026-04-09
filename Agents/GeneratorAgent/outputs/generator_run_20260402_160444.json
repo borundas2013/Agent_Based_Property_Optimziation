@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 175,
+    "target_er": 100,
+    "group1": "C=C",
+    "group2": "CCS"
+  },
+  "initial": {
+    "monomer1": "C=CCN1C(=O)C(=O)N(C=CC)C(=O)N(C=CC)C1",
+    "monomer2": "c1c(CCS)cc(CCS)c(CCS)c1",
+    "reason": "Monomer1 is triallyl isocyanurate (TAIC-like): three allylic C=C groups (appearing three times) on a rigid isocyanurate ring to give high Tg (rigid, aromatic/heterocyclic core) and high crosslink potential (trifunctional vinyl). Monomer2 is 1,3,5-tris(2-mercaptoethyl)benzene: three thiol-terminated 2-ethyl arms (each contains the CCS pattern), providing at least three -SH reactive sites for thiol–ene chemistry. The TAIC-type trifunctional vinyl + tri-thiol pair yields a high crosslink density network (tunable stoichiometry) expected to approach the target high Tg (~175 °C) and high modulus (Er ≈ 100 MPa) due to the aromatic/isocyanurate rigidity and multifunctionality. Both SMILES are chemically plausible and synthesizable, with complementary reactive groups (C=C vs CCS/thiol) present multiple times to ensure efficient thiol–ene thermoset formation.",
+    "predicted_tg": 132.31,
+    "predicted_er": 23.51,
+    "dtg": 42.69,
+    "der": 76.49,
+    "ratio_1": 0.8,
+    "ratio_2": 0.2,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C=CC1=CC=C(C=C1)C=C",
+    "monomer2": "C(c1ccc(CCS)cc1)(c2ccc(CCS)cc2)(c3ccc(CCS)cc3)(c4ccc(CCS)cc4)",
+    "reason": "Revised to increase Tg and Er by (1) raising aromatic content and rigidity in both monomers and (2) increasing crosslinking functionality. Monomer1 is a rigid, aromatic divinylbenzene-type crosslinker (two C=C vinyl groups) to provide stiff, high-Tg network junctions and multiple vinyl reactive sites. Monomer2 is tetrakis(4-(2-mercaptoethyl)phenyl)methane: a bulky, highly aromatic tetrafunctional thiol (four CCS groups, each ‘CCS’ appears four times) that (a) satisfies the required CCS motif at least twice, (b) greatly increases thiol functionality for higher crosslink density (raising Er), and (c) contributes rigidity from the tetraphenylmethane core (raising Tg). The vinyl–thiol (thiol–ene) pairing is compatible, and the higher functionality and aromatic content address the low Tg/Er feedback from the previous design.",
+    "predicted_tg": 141.98,
+    "predicted_er": 32.98,
+    "dtg": 33.02,
+    "der": 67.02,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

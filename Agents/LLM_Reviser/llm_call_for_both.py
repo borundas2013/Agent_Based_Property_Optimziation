@@ -199,135 +199,17 @@ Return exactly this JSON format:
     ]
 
 
-def call_llm_reviser(revision_request: Dict[str, Any]) -> str:
-    messages = make_llm_reviser_messages(revision_request)
-
-    response = client.chat.completions.create(
-        model="gpt-5-mini",
-        messages=messages,
-    )
-
-    content = response.choices[0].message.content
-    print(content)
-    return content
-
-def make_llm_reviser_messages_2(revision_request: Dict[str, Any]):
-
-    system_prompt = """You are a chemistry-aware molecular reviser for thermoset shape-memory polymer design.
-
-Your task is to revise an existing two-monomer candidate to improve only the properties that are flagged for revision, while keeping the overall chemistry and application (thermoset shape-memory polymer) appropriate.
-
-Core rules:
-1. Return exactly two monomers and keep the same number of monomers as the original candidate.
-2. Preserve the original candidate as much as possible; make minimal necessary changes to the monomer structures.
-3. Both revised monomers must be syntactically valid SMILES strings and chemically reasonable.
-4. Only revise properties explicitly marked as needing correction; do not intentionally change properties that are already within tolerance.
-5. Prefer changes that adjust the priority property while minimally perturbing non-priority properties.
-6. If a safe minimal revision is not possible, return the original monomers unchanged and explain briefly in the revision_summary.
-
-JSON formatting rules (very important):
-7. Output must be valid JSON that can be parsed by a standard JSON parser.
-8. Do NOT include any markdown, backticks, labels, comments, or surrounding text (no ```json, no "Here is the JSON", etc.).
-9. Use exactly the following three keys and no others: "revised_monomer_1", "revised_monomer_2", "revision_summary".
-10. The values of "revised_monomer_1" and "revised_monomer_2" must be SMILES strings for the two monomers.
-11. The "revision_summary" must be a short natural-language explanation of the key structural changes and how they affect the revised properties.
-
-Expected JSON schema:
-{
-  "revised_monomer_1": "string",
-  "revised_monomer_2": "string",
-  "revision_summary": "string"
-}"""
-
-    target = revision_request["target_properties"]
-    cand = revision_request["current_candidate"]
-    pred = revision_request["predicted_properties"]
-    err = revision_request["error_values"]
-    status = revision_request["property_status"]
-    diagnosis = revision_request["diagnosis"]
-    instr = revision_request["revision_instruction"]
-    priority = revision_request["priority_property"]
-
-
-    user_prompt = f"""Revise the following two-monomer TSMP candidate based on the property revision request.
-
-Original generation prompt:
-{revision_request["original_prompt"]}
-
-Target properties:
-- Tg: {target["tg"]}
-- Er: {target["er"]}
-
-Current monomer candidate:
-- Monomer 1 (SMILES): {cand["monomer_1"]}
-- Monomer 2 (SMILES): {cand["monomer_2"]}
-
-Predicted properties of current candidate:
-- Predicted Tg: {pred["tg"]}
-- Predicted Er: {pred["er"]}
-
-Property revision status:
-- Tg: {status["tg"]}
-- Er: {status["er"]}
-- Priority property: {priority}
-
-Error values:
-- Tg error (dtg): {err["dtg"]}
-- Er error (der): {err["der"]}
-- Tg tolerance: {err["tol_tg"]}
-- Er tolerance: {err["tol_er"]}
-
-Diagnosis summary:
-{diagnosis["summary"]}
-
-Recommended actions:
-{json.dumps(diagnosis["recommended_actions"], ensure_ascii=False)}
-
-Revision goal:
-{instr["goal"]}
-
-Important instructions:
-- Focus revisions on the properties that are outside tolerance, especially the priority property.
-- Preserve properties already within tolerance as much as possible.
-- Make minimal structural edits that are chemically reasonable for thermoset shape-memory polymer design.
-- Keep the monomer count at exactly two and keep the basic identity of each monomer recognizable unless a more substantial change is clearly justified.
-
-CRITICAL OUTPUT INSTRUCTIONS:
-- Respond with a single JSON object only.
-- Do NOT include any prose, explanations, markdown formatting, or backticks outside the JSON.
-- Use exactly these keys: "revised_monomer_1", "revised_monomer_2", "revision_summary".
-
-Return exactly this JSON format (with your own values filled in):
-{{
-  "revised_monomer_1": "...",
-  "revised_monomer_2": "...",
-  "revision_summary": "..."
-}}"""
-
-    return [
-        {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_prompt},
-    ]
 def call_llm_reviser( revision_request: Dict[str, Any]) -> Dict[str, Any]:
 
     messages = make_llm_reviser_messages(revision_request)
     
     response = client.chat.completions.create(
-        model='gpt-5-mini',
+        model="gpt-5-mini",#'gpt-5-mini',
         messages=messages,
-        
+        seed=42,
     )
     content = response.choices[0].message.content
     print(content)
     return content
 
 
-def call_repaird_llm_reviser(messages: List[Dict[str, Any]]) -> Dict[str, Any]:
-    response = client.chat.completions.create(
-        model='gpt-5-mini',
-        messages=messages,
-        
-    )
-    content = response.choices[0].message.content
-    print(content)
-    return content

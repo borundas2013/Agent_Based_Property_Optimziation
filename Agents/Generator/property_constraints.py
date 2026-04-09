@@ -19,6 +19,7 @@ from constraints.chemical_validity import ChemicalValidityCheck
 from constraints.group_validity import GroupCheck
 from constraints.monomer_extraction import *
 from Predictor_Agent.property_check.property_checker import PropertyChecker
+from extraction import extract_monomer_smiles
 
 # ---------------------------------------------------------------------
 # Environment / configuration
@@ -31,7 +32,7 @@ if AGENTS_ROOT not in sys.path:
 
 load_dotenv()
 API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL_ID = os.getenv("FINETUNED_MODEL_ID_NEW")
+MODEL_ID = os.getenv("FINETUNED_MODEL_ID")
 
 TOL_TG = 10
 TOL_ER = 10
@@ -68,25 +69,37 @@ def read_json_from_file(filename: str) -> Any:
         print(f"Loaded data from {file_path} (type: {type(data).__name__})")
 
     if isinstance(data, list):
+        processed: list = []
         for idx, item in enumerate(data):
             if isinstance(item, dict):
                 prompt = item["prompt"]
-                target_tg = 175  # item["target_tg"]
-                target_er = 40  # item["target_er"]
+                target_tg = item["target_tg"]
+                target_er = item["target_er"]
 
                 if target_tg is not None and target_er is not None:
-                    # Monomer examples currently hard-coded as in original file.
-                    monomer_1 = "CC(C)(c2ccc(OCC1CO1)cc2)c4ccc(OCC3CO3)cc4"
-                    monomer_2 = "CC(N)COCC(C)OCC(C)OCC(C)OCC(C)OCC(C)N"
+                    response = generate_sample_data(prompt)
 
-                    chemical_validity = chemical_validity_check.check_chemical_validity(
-                        monomer_1, monomer_2
+                    smiles = extract_monomer_smiles(response)
+
+                    monomer_1 = smiles[0]
+                    monomer_2 = smiles[1]
+
+                    chemical_validity, smiles_1, smiles_2 = (
+                        chemical_validity_check.check_chemical_validity(
+                            monomer_1, monomer_2
+                        )
                     )
+                    if smiles_1:
+                        monomer_1 = smiles_1
+                    if smiles_2:
+                        monomer_2 = smiles_2
+
                     group_validity = group_validity_check.check_exact_group_consistency(
                         monomer_1, monomer_2, None, None
                     )
 
                     if not chemical_validity:
+                        print(f"Sample {idx}: chemical validity failed, skipping.")
                         continue
 
                     property_details = check_tg_er_properties(
@@ -100,8 +113,10 @@ def read_json_from_file(filename: str) -> Any:
                     dtg = float(property_details.get("dtg"))
                     der = float(property_details.get("der"))
 
-                    if dtg > TOL_TG or der > TOL_ER:
-                        return {
+                    needs_agent = dtg > TOL_TG or der > TOL_ER
+                    processed.append(
+                        {
+                            "sample_index": idx,
                             "prompt": prompt,
                             "target_tg": target_tg,
                             "target_er": target_er,
@@ -110,28 +125,74 @@ def read_json_from_file(filename: str) -> Any:
                             "chemical_validity": chemical_validity,
                             "group_validity": group_validity,
                             "property_details": property_details,
-                            "is_agent_call_needed": True,
+                            "is_agent_call_needed": needs_agent,
                         }
-                    else:
-                        return {
-                            "prompt": prompt,
-                            "target_tg": target_tg,
-                            "target_er": target_er,
-                            "monomer_1": monomer_1,
-                            "monomer_2": monomer_2,
-                            "property_details": property_details,
-                            "is_agent_call_needed": False,
-                        }
+                    )
+                    print(f"Sample {idx}: processed (agent_needed={needs_agent}).")
                 else:
                     print(f"No target_tg or target_er found for item {idx}")
+                
+
+        if processed:
+            return processed
+        print("No list items were successfully processed (all skipped or invalid).")
+        return []
+
     else:
         print("Loaded JSON is not a list, full data:")
 
     return data
 
 
-# ---------------------------------------------------------------------
-# Property checking helpers
+def evaluate_property_constraints(
+    monomer_1: str,
+    monomer_2: str,
+    target_tg: float,
+    target_er: float,
+    tol_tg: float,
+    tol_er: float,
+    prompt: str,
+):
+    chemical_validity = chemical_validity_check.check_chemical_validity(
+        monomer_1, monomer_2
+    )
+    group_validity = group_validity_check.check_exact_group_consistency(
+        monomer_1, monomer_2, None, None
+    )
+
+    property_details = check_tg_er_properties(
+        monomer_1,
+        monomer_2,
+        target_tg,
+        target_er,
+        TOL_TG,
+        TOL_ER,
+    )
+    dtg = float(property_details.get("dtg"))
+    der = float(property_details.get("der"))
+
+    is_agent_call_needed = dtg > TOL_TG or der > TOL_ER
+
+    if is_agent_call_needed:
+        return {
+            "target_tg": target_tg,
+            "target_er": target_er,
+            "monomer_1": monomer_1,
+            "monomer_2": monomer_2,
+            "chemical_validity": chemical_validity,
+            "group_validity": group_validity,
+            "property_details": property_details,
+            "is_agent_call_needed": True,
+        }
+    else:
+        return {
+            "target_tg": target_tg,
+            "target_er": target_er,
+            "monomer_1": monomer_1,
+            "monomer_2": monomer_2,
+            "property_details": property_details,
+            "is_agent_call_needed": False,
+        }
 # ---------------------------------------------------------------------
 
 def check_tg_er_properties(
@@ -143,7 +204,14 @@ def check_tg_er_properties(
     tol_er: float,
 ):
     """Convenience wrapper around `check_property` used throughout the agents."""
-    result = check_property(monomer_1, monomer_2, target_tg, target_er, tol_tg, tol_er)
+    result = check_property(
+        monomer_1,
+        monomer_2,
+        target_tg,
+        target_er,
+        tol_tg,
+        tol_er,
+    )
     return result
 
 
@@ -194,12 +262,10 @@ def check_property(
         dtg = float(result.get("dtg"))
         der = float(result.get("der"))
 
-        # Prefer dtg/der close to or below tolerances
+        # Prefer dtg/der close to or below tolerances.
         over_tg = max(dtg - tol_tg, 0.0)
         over_er = max(der - tol_er, 0.0)
         penalty = over_tg + over_er
-
-        # Tie‑break by overall absolute error dtg + der
         tie_break = dtg + der
         score_tuple = (penalty, tie_break)
 
@@ -219,7 +285,7 @@ def check_property(
 # Optional: sample data generation via LLM
 # ---------------------------------------------------------------------
 
-def generate_sample_data(prompt: str, target_tg: float, target_er: float) -> str:
+def generate_sample_data(prompt: str) -> str:
     """
     Use the fine‑tuned OpenAI model to generate sample data for a prompt/target pair.
     """

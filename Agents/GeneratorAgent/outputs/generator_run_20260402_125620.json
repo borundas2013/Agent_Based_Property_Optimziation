@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 250,
+    "target_er": 50,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "C1OC1COc2ccc(cc2)COC3OC3",
+    "monomer2": "NCc1ccc(cc1)CNCc2ccc(cc2)CN",
+    "reason": "Designed an epoxy/amine thermoset pair: monomer1 is a rigid, aromatic diepoxide (two glycidyl/oxirane units; contains the required C1OC1 epoxide motif and a second oxirane) and monomer2 is a bis(aminomethyl)-linked diphenyl derivative that contains multiple NC motifs (two amine-containing sites). The epoxy (C1OC1/C3OC3) and amine (NC) groups are complementary and will cure via epoxy-amine chemistry to give a highly crosslinked, rigid network. Aromatic backbones and two reactive sites per monomer raise Tg toward the 250°C target and increase crosslink density/Er toward ~50. Both structures are simple, synthetically plausible building blocks (a bis-glycidyl aromatic ether and a bis(aminomethyl) diaryl amine) suitable for thermoset SMP formation.",
+    "predicted_tg": 125.95,
+    "predicted_er": 53.45,
+    "dtg": 124.05,
+    "der": 3.45,
+    "ratio_1": 0.7,
+    "ratio_2": 0.3,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C1OC1COc2ccc(cc2)S(=O)(=O)c3ccc(cc3)OCC4OC4",
+    "monomer2": "NCC1=CC=C(C=C1)S(=O)(=O)C2=CC=C(C=C2)CCN",
+    "reason": "Revised to increase rigidity and Tg: monomer1 is a bis-glycidyl (two oxirane motifs shown as C1OC1 and C4OC4) tethered to a rigid aromatic sulfone core to raise Tg and provide epoxy functionality (compatible with NC-containing curing agents). Monomer2 is a bis-aminomethyl diphenyl sulfone (two amine-containing termini, shown with NC patterns) serving as a difunctional curing agent; the aromatic sulfone core and dual amine sites increase network rigidity and crosslink density to move Tg toward the 250°C target and Er toward 50. SMILES kept synthetically plausible and chemically compatible (epoxy groups in monomer1 react with amines in monomer2).",
+    "predicted_tg": 192.2,
+    "predicted_er": 46.94,
+    "dtg": 57.8,
+    "der": 3.06,
+    "ratio_1": 0.7,
+    "ratio_2": 0.3,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

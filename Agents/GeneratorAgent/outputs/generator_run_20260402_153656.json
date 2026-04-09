@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 175,
+    "target_er": 100,
+    "group1": "C=C",
+    "group2": "CCS"
+  },
+  "initial": {
+    "monomer1": "C=CCN1C(=O)C(=O)N(C=CC)C(=O)N(C=CC)1",
+    "monomer2": "CCSc1ccc(CCS)cc1",
+    "reason": "Monomer1 is triallyl isocyanurate (three allyl C=C groups) — a trifunctional vinyl-containing crosslinker providing at least three C=C reactive sites to ensure high crosslink density and compatibility with thiol-ene chemistry. Monomer2 is 1,4-bis(2-mercaptoethyl)benzene (two CH2-CH2-SH arms; the SMILES contains the 'CCS' motif twice) — a rigid aromatic dithiol delivering two thiol groups for efficient thiol–ene addition. The pair (multiple C=C in monomer1 and multiple CCS/thiol in monomer2) meets the required functional-group counts and is reactive/compatible for thermoset formation. The aromatic core and multifunctionality are chosen to drive a high glass transition (toward ~175°C) and high rubbery modulus (high Er ≈100) via increased crosslink density and rigidity.",
+    "predicted_tg": 139.33,
+    "predicted_er": 15.87,
+    "dtg": 35.67,
+    "der": 84.13,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C(c1ccc(C=C)cc1)(c2ccc(C=C)cc2)(c3ccc(C=C)cc3)c4ccc(C=C)cc4",
+    "monomer2": "C(c1ccc(CCS)cc1)(c2ccc(CCS)cc2)(c3ccc(CCS)cc3)c4ccc(CCS)cc4",
+    "reason": "Replaced the previous flexible tri-functional design with two tetrakis-aryl cores: monomer1 is tetrakis(4-vinylphenyl)methane (four C=C vinyl groups) and monomer2 is tetrakis(4-(2-mercaptoethyl)phenyl)methane (four CCS ethanethiol groups). Both SMILES are synthesizable and chemically valid. The increased aromatic content and tetra-functionality raise network rigidity and crosslink density to move Tg toward 175°C and Er toward 100. Vinyl (C=C) — thiol (CCS) pairing enables efficient thiol–ene crosslinking; each monomer contains the required reactive groups multiple times to satisfy functionality and compatibility and address the agent feedback.",
+    "predicted_tg": 148.09,
+    "predicted_er": 27.23,
+    "dtg": 26.91,
+    "der": 72.77,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

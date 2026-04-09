@@ -112,6 +112,7 @@ def build_property_revision_request(
     default_tol_er: float = 5.0,
     weight_tg: float = 0.5,
     weight_er: float = 0.5,
+    focus_property: str = "both",
 ) -> Dict[str, Any]:
     def _status(
         pred: Optional[float],
@@ -134,6 +135,10 @@ def build_property_revision_request(
         if norm_error <= 2.5:
             return "high"
         return "very_high"
+
+    focus_property = (focus_property or "both").lower()
+    if focus_property not in {"tg", "er", "both"}:
+        raise ValueError("focus_property must be one of: 'tg', 'er', 'both'")
 
     metrics = extract_property_metrics(
         result,
@@ -160,7 +165,12 @@ def build_property_revision_request(
     tg_direction = metrics["tg_direction"]
     er_direction = metrics["er_direction"]
 
-    combined_score = (weight_tg * normalized_dtg) + (weight_er * normalized_der)
+    if focus_property == "tg":
+        combined_score = normalized_dtg
+    elif focus_property == "er":
+        combined_score = normalized_der
+    else:
+        combined_score = (weight_tg * normalized_dtg) + (weight_er * normalized_der)
 
     tg_status = _status(predicted_tg, target_tg, tol_tg)
     er_status = _status(predicted_er, target_er, tol_er)
@@ -168,11 +178,24 @@ def build_property_revision_request(
     tg_needs_revision = dtg is not None and tol_tg is not None and dtg > tol_tg
     er_needs_revision = der is not None and tol_er is not None and der > tol_er
 
-    needs_property_revision = bool(
-        tg_needs_revision or er_needs_revision or result.get("is_agent_call_needed", False)
-    )
+    if focus_property == "tg":
+        needs_property_revision = bool(
+            tg_needs_revision or result.get("is_agent_call_needed", False)
+        )
+    elif focus_property == "er":
+        needs_property_revision = bool(
+            er_needs_revision or result.get("is_agent_call_needed", False)
+        )
+    else:
+        needs_property_revision = bool(
+            tg_needs_revision or er_needs_revision or result.get("is_agent_call_needed", False)
+        )
 
-    if tg_needs_revision and er_needs_revision:
+    if focus_property == "tg":
+        priority_property = "tg"
+    elif focus_property == "er":
+        priority_property = "er"
+    elif tg_needs_revision and er_needs_revision:
         if normalized_dtg > normalized_der:
             priority_property = "tg"
         elif normalized_der > normalized_dtg:
@@ -188,28 +211,30 @@ def build_property_revision_request(
 
     recommended_actions: List[str] = []
 
-    if tg_direction == "increase":
-        recommended_actions.append("increase predicted Tg")
-    elif tg_direction == "decrease":
-        recommended_actions.append("decrease predicted Tg")
+    if focus_property in {"tg", "both"}:
+        if tg_direction == "increase":
+            recommended_actions.append("increase predicted Tg")
+        elif tg_direction == "decrease":
+            recommended_actions.append("decrease predicted Tg")
 
-    if er_direction == "increase":
-        recommended_actions.append("increase predicted Er")
-    elif er_direction == "decrease":
-        recommended_actions.append("decrease predicted Er")
+    if focus_property in {"er", "both"}:
+        if er_direction == "increase":
+            recommended_actions.append("increase predicted Er")
+        elif er_direction == "decrease":
+            recommended_actions.append("decrease predicted Er")
 
     if not recommended_actions:
         recommended_actions.append("preserve current property alignment")
 
     summary_parts: List[str] = []
 
-    if tg_status != "unknown":
+    if focus_property in {"tg", "both"} and tg_status != "unknown":
         summary_parts.append(
             f"Predicted Tg is {predicted_tg} while target Tg is {target_tg} "
             f"(error={dtg}, tolerance={tol_tg}, status={tg_status}, direction={tg_direction})."
         )
 
-    if er_status != "unknown":
+    if focus_property in {"er", "both"} and er_status != "unknown":
         summary_parts.append(
             f"Predicted Er is {predicted_er} while target Er is {target_er} "
             f"(error={der}, tolerance={tol_er}, status={er_status}, direction={er_direction})."
@@ -224,21 +249,30 @@ def build_property_revision_request(
     else:
         summary_parts.append("Property values are within tolerance; revision is optional.")
 
-    summary_parts.append(f"Recommended optimization mode is {mode_info['mode']}.")
+    if focus_property == "tg":
+        effective_mode = "tg_only"
+    elif focus_property == "er":
+        effective_mode = "er_only"
+    else:
+        effective_mode = mode_info["mode"]
+
+    summary_parts.append(f"Recommended optimization mode is {effective_mode}.")
 
     summary = " ".join(summary_parts)
 
     revision_goal_parts: List[str] = []
 
-    if tg_direction == "increase":
-        revision_goal_parts.append("raise predicted Tg")
-    elif tg_direction == "decrease":
-        revision_goal_parts.append("lower predicted Tg")
+    if focus_property in {"tg", "both"}:
+        if tg_direction == "increase":
+            revision_goal_parts.append("raise predicted Tg")
+        elif tg_direction == "decrease":
+            revision_goal_parts.append("lower predicted Tg")
 
-    if er_direction == "increase":
-        revision_goal_parts.append("raise predicted Er")
-    elif er_direction == "decrease":
-        revision_goal_parts.append("lower predicted Er")
+    if focus_property in {"er", "both"}:
+        if er_direction == "increase":
+            revision_goal_parts.append("raise predicted Er")
+        elif er_direction == "decrease":
+            revision_goal_parts.append("lower predicted Er")
 
     if revision_goal_parts and needs_property_revision:
         revision_goal = "Revise the monomer pair to " + " and ".join(revision_goal_parts) + "."
@@ -247,7 +281,8 @@ def build_property_revision_request(
 
     return {
         "needs_property_revision": needs_property_revision,
-        "optimization_mode": mode_info["mode"],
+        "optimization_mode": effective_mode,
+        "focus_property": focus_property,
         "property_direction": {
             "tg": tg_direction,
             "er": er_direction,

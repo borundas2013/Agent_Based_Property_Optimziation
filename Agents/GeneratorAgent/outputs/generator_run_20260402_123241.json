@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 80,
+    "target_er": 50,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "C1OC1COc2ccc(cc2)C(C)(C)c3ccc(OCC4OC4)cc3",
+    "monomer2": "NCCNCCN",
+    "reason": "Monomer1 is a diglycidyl ether based on a bisphenol-like core (two epoxide rings: one explicitly as C1OC1 and a second as C4OC4). The aromatic, tertiary-carbon (bisphenol) backbone raises rigidity and Tg toward ~80°C while providing two epoxy reactive sites for crosslinking. Monomer2 is diethylenetriamine (NCCNCCN) — synthesizable, contains the required NC motif at least twice, and provides multiple amine nucleophiles for efficient epoxy ring-opening (high crosslink density to raise Er toward ~50 MPa). The epoxy (C1OC1/C4OC4) — amine (NC) pairing is chemically compatible for thermoset formation; this combination balances aromatic rigidity and multifunctional curing to approach the target Tg and Er.",
+    "predicted_tg": 97.35,
+    "predicted_er": 34.49,
+    "dtg": 17.35,
+    "der": 15.51,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "OCC1OC1OCCOCCOCCOCC2OC2",
+    "monomer2": "NCCNCCNCCN",
+    "reason": "Revised to address feedback: monomer1 is a flexible diglycidyl ether (two epoxide rings shown as C1OC1 and C2OC2) to lower Tg via ether-rich aliphatic linkers while providing at least two epoxy reactive sites for crosslinking. Monomer2 is triethylenetetramine (NCCNCCNCCN) with multiple NC motifs (>=2) and four nitrogens to increase crosslink-supporting reactive site density and raise Er. The pair is epoxy–amine compatible (C1OC1 vs NC). These changes lower network stiffness/Tg (more flexible monomer1) while increasing crosslink density/Er (multifunctional polyamine), addressing the reported high-Tg and low-Er issues.",
+    "predicted_tg": 83.06,
+    "predicted_er": 46.64,
+    "dtg": 3.06,
+    "der": 3.36,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "within_property_tolerance": true,
+    "suggest_follow_up_agent": false
+  }
+}

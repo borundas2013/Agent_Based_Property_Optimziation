@@ -19,28 +19,45 @@ def compute_combined_score(result: Dict[str, Any]) -> float:
 
     return normalized_dtg + normalized_der
 
-def decide_optimization_mode(result: Dict[str, Any]) -> str:
-    """
-    Decide whether to optimize Tg first, Er first, or jointly.
-    """
+# def compute_combined_score_single(result: Dict[str, Any]) -> float:
+#     """
+#     Lower is better.
+#     Score = normalized Tg error + normalized Er error
+#     """
+#     prop = result.get("property_details", {})
+#     focus_property = result.get("focus_property", "tg")
 
-    prop = result.get("property_details", {})
+#     if focus_property == "tg":
+#         normalized_dtg = float(prop.get("dtg", 1e9)) / float(prop.get("tol_tg", 10.0)) if float(prop.get("tol_tg", 10.0)) > 0 else 1e9
+#         return normalized_dtg
+#     elif focus_property == "er":
+#         normalized_der = float(prop.get("der", 1e9)) / float(prop.get("tol_er", 10.0)) if float(prop.get("tol_er", 10.0)) > 0 else 1e9
+#         return normalized_der
 
-    dtg = float(prop.get("dtg", 1e9))
-    der = float(prop.get("der", 1e9))
-    tol_tg = float(prop.get("tol_tg", 10.0))
-    tol_er = float(prop.get("tol_er", 10.0))
 
-    normalized_dtg = dtg / tol_tg if tol_tg > 0 else 1e9
-    normalized_der = der / tol_er if tol_er > 0 else 1e9
+# def decide_optimization_mode(result: Dict[str, Any]) -> str:
+#     """
+#     Decide whether to optimize Tg first, Er first, or jointly.
+#     """
 
-    if normalized_dtg > 2.0 and normalized_dtg > normalized_der * 1.3:
-        return "tg_first"
+#     prop = result.get("property_details", {})
 
-    elif normalized_der > 2.0 and normalized_der > normalized_dtg * 1.3:
-        return "er_first"
+#     dtg = float(prop.get("dtg", 1e9))
+#     der = float(prop.get("der", 1e9))
+#     tol_tg = float(prop.get("tol_tg", 10.0))
+#     tol_er = float(prop.get("tol_er", 10.0))
 
-    return "joint"
+#     normalized_dtg = dtg / tol_tg if tol_tg > 0 else 1e9
+#     normalized_der = der / tol_er if tol_er > 0 else 1e9
+
+#     if normalized_dtg > 2.0 and normalized_dtg > normalized_der * 1.3:
+#         return "tg_first"
+
+#     elif normalized_der > 2.0 and normalized_der > normalized_dtg * 1.3:
+#         return "er_first"
+
+#     return "joint"
+
 
 def decide_optimization_mode(result: Dict[str, Any]) -> Dict[str, str]:
     """
@@ -100,6 +117,19 @@ def compute_error_metrics(result: Dict[str, Any]) -> Dict[str, float]:
         "combined_score": normalized_dtg + normalized_der,
     }
 
+
+# def compute_error_metrics_single(result: Dict[str, Any]) -> Dict[str, float]:
+#     prop = result.get("property_details", {})
+
+#     focus_property = result.get("focus_property", "tg")
+
+#     if focus_property == "tg":
+#         normalized_dtg = float(prop.get("dtg", 1e9)) / float(prop.get("tol_tg", 10.0)) if float(prop.get("tol_tg", 10.0)) > 0 else 1e9
+#         return normalized_dtg
+#     elif focus_property == "er":
+#         normalized_der = float(prop.get("der", 1e9)) / float(prop.get("tol_er", 10.0)) if float(prop.get("tol_er", 10.0)) > 0 else 1e9
+#         return normalized_der
+
 def is_within_tolerance(result: Dict[str, Any]) -> bool:
     prop = result.get("property_details", {})
     dtg = float(prop.get("dtg", 1e9))
@@ -107,4 +137,15 @@ def is_within_tolerance(result: Dict[str, Any]) -> bool:
     tol_tg = float(prop.get("tol_tg", 10.0))
     tol_er = float(prop.get("tol_er", 10.0))
     return dtg <= tol_tg and der <= tol_er
+
+# def is_within_tolerance_single(result: Dict[str, Any]) -> bool:
+#     prop = result.get("property_details", {})
+#     focus_property = result.get("focus_property", "tg")
+#     if focus_property == "tg":
+#         normalized_dtg = float(prop.get("dtg", 1e9)) / float(prop.get("tol_tg", 10.0)) if float(prop.get("tol_tg", 10.0)) > 0 else 1e9
+#         return normalized_dtg <= 1.0
+#     elif focus_property == "er":
+#         normalized_der = float(prop.get("der", 1e9)) / float(prop.get("tol_er", 10.0)) if float(prop.get("tol_er", 10.0)) > 0 else 1e9
+#         return normalized_der <= 1.0
+#     return False
 

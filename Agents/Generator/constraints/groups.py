@@ -234,4 +234,11 @@ class ChemicalGroupAnalyzer:
         
         return group1_present,  group2_present
 
+if __name__ == "__main__":
+    analyzer = ChemicalGroupAnalyzer()
+    smiles1 = "CC(C)(c1ccc(OCC2CO2)cc1)c1ccc(OCC2CO2)cc1"
+    smiles2 = "Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1"
+    result = analyzer.check_reaction_consistency(smiles1, smiles2)
+    print(result)
+
     

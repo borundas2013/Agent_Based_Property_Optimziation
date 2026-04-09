@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 175,
+    "target_er": 100,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "c3cc(OCC1OC1)cc(OCC2OC2)c3",
+    "monomer2": "NCCNCCN",
+    "reason": "Monomer1 is 1,3-bis(glycidyloxy)benzene (aromatic diepoxide). It contains the required C1OC1 epoxide substring (and a second epoxide as C2OC2) to enable epoxy crosslinking and provides a rigid, aromatic backbone to raise Tg toward the 175°C target and increase modulus. Monomer2 is diethylenetriamine (NCCNCCN): it contains the required NC motif twice and provides multiple nucleophilic amine sites for epoxy ring-opening (epoxy–amine curing), producing a high crosslink density to push Er toward the target (~100) while also supporting a high Tg when cured with the aromatic diepoxide.",
+    "predicted_tg": 171.21,
+    "predicted_er": 41.9,
+    "dtg": 3.79,
+    "der": 58.1,
+    "ratio_1": 0.1,
+    "ratio_2": 0.9,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C(C2=CC=CC=C2OCC1OC1)(C3=CC=CC=C3OCC4OC4)(C5=CC=CC=C5OCC6OC6)(C7=CC=CC=C7OCC8OC8)",
+    "monomer2": "NCCc1ccc(cc1)CCN",
+    "reason": "Revised to an epoxy–amine compatible pair: monomer1 is a tetra-glycidyl (four epoxide rings, multiple C#OC# epoxide motifs including a C1OC1 fragment) on a rigid tetra-phenylmethane core to raise Tg and Er via high crosslink density; monomer2 is a bis(aminomethyl) benzene (two NC-linked primary amines, NC appears twice) to act as a difunctional curing agent that reacts with the epoxide rings to form a thermoset network. This fixes the previous issues (epoxide and NC groups present and compatible) and moves the system toward the target high Tg (~175°C) and high modulus (Er ~100) by combining a multi-functional rigid epoxy with aromatic diamine curing agent.",
+    "predicted_tg": 160.83,
+    "predicted_er": 66.17,
+    "dtg": 14.17,
+    "der": 33.83,
+    "ratio_1": 0.7,
+    "ratio_2": 0.3,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

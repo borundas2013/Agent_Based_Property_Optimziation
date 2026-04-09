@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 150,
+    "target_er": 75,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "C1OC1COc2ccc(cc2)C(C)(C)c3ccc(cc3)OCC4OC4",
+    "monomer2": "Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N",
+    "reason": "Monomer1 is a bis-glycidyl (diepoxide) aromatic diglycidyl ether (contains epoxide motif C1OC1 and a second epoxide C4OC4) giving reactive epoxy groups for crosslinking. Monomer2 is 4,4'-diaminodiphenylsulfone (two amine groups, NC functionality present twice) — a rigid, highly aromatic diamine curing agent. Epoxy (C1OC1) + amine (NC) curing yields a dense, highly crosslinked thermoset with high glass transition (target ~150°C) and elevated elastic modulus (Er ~75) due to the rigid aromatic/sulfone core and bifunctional reactive sites.",
+    "predicted_tg": 163.89,
+    "predicted_er": 28.86,
+    "dtg": 13.89,
+    "der": 46.14,
+    "ratio_1": 0.9,
+    "ratio_2": 0.1,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "CC(C)(c3ccc(cc3)OCC1OC1)c5ccc(cc5)OCC2OC2",
+    "monomer2": "NCCNCCN",
+    "reason": "Revised to address feedback: monomer1 is a bisphenol-A-type diglycidyl ether containing explicit epoxide motifs (C1OC1 present and a second epoxide as C2OC2) to provide multiple reactive epoxy rings for crosslinking. Monomer2 is diethylenetriamine (NCCNCCN) containing two NC motifs (two terminal -NH2-containing sequences written as NC) and a secondary amine, giving three nucleophilic N sites for efficient epoxy opening. The pair is a compatible epoxy–amine thermoset system (epoxide + amine), with the rigid aromatic diglycidyl core and multifunctional amine chosen to increase Tg and modulus toward the targets (high crosslink density and aromatic rigidity to approach Tg ≈150°C and Er ≈75 MPa). Functional-group and reactivity issues from the prior design have been corrected.",
+    "predicted_tg": 156.22,
+    "predicted_er": 70.97,
+    "dtg": 6.22,
+    "der": 4.03,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": true,
+    "suggest_follow_up_agent": false
+  }
+}

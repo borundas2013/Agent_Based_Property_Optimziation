@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 175,
+    "target_er": 75,
+    "group1": "C=C",
+    "group2": "CCS"
+  },
+  "initial": {
+    "monomer1": "C=CC1=CC=C(C=C1)C=C",
+    "monomer2": "HSCCCc1ccc(CCCS)cc1",
+    "reason": "Monomer1 is p-divinylbenzene (two vinyl C=C groups) — a rigid, aromatic di-vinyl that provides multiple ene sites for thiol–ene crosslinking and raises network Tg and modulus. Monomer2 is 1,4-bis(3-mercaptopropyl)benzene (two propyl‑thiol, CCS-type —SH groups) giving at least two thiol reactive sites for efficient thiol–ene curing. The aromatic cores and multifunctionality increase crosslink density and stiffness to approach a high Tg (~175°C) and elevated Er (~75), while the propyl linkers enable good reactivity and network formation.",
+    "predicted_tg": null,
+    "predicted_er": null,
+    "dtg": null,
+    "der": null,
+    "ratio_1": null,
+    "ratio_2": null,
+    "within_property_tolerance": null,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C=CC1=CC(=CC(=C1)C2=CC=C(C=C2)C=C)C3=CC=C(C=C3)C=C",
+    "monomer2": "c1c(cc(c(c1CCS)CCS)CCS)CCS",
+    "reason": "Revised to raise Tg and Er by increasing network rigidity and functionality. Monomer1 is a tri‑styrenyl (three C=C) highly aromatic, multi‑phenyl core (three vinyl groups) to increase backbone rigidity and provide multiple vinyl reactive sites for thio‑ene crosslinking. Monomer2 is a 1,2,4,5‑tetrakis(2‑mercaptoethyl)benzene (four CCS groups) providing high thiol functionality (four CCS) on an aromatic core to increase crosslink density and rigidity. The pair uses vinyl (C=C) vs ethylthiol (CCS) chemistry (thio‑ene compatible) with each required functional group present multiple times to improve crosslink density and move Tg and Er toward the targets while remaining chemically plausible and synthesizable.",
+    "predicted_tg": 138.32,
+    "predicted_er": 21.37,
+    "dtg": 36.68,
+    "der": 53.63,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

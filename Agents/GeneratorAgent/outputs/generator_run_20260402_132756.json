@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 100,
+    "target_er": 50,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "C1OC1COc2ccc(cc2)OCC3OC3",
+    "monomer2": "NCc1cccc(CN)c1",
+    "reason": "Monomer1 is 1,4-bis(glycidyloxy)benzene-like (two epoxide/oxirane rings present as C1OC1 and C3OC3) giving multiple epoxy reactive sites for crosslinking. Monomer2 is m-xylylenediamine-like (two primary amines, NC-containing benzylic amines) providing complementary nucleophiles to open epoxide rings. The aromatic spacer in both monomers increases rigidity and polarity to target a Tg near 100 °C; the di-functional epoxy/di-amine pair gives moderate crosslink density (expected Er ~50) while remaining synthetically accessible and chemically compatible for thermoset formation.",
+    "predicted_tg": 95.69,
+    "predicted_er": 29.18,
+    "dtg": 4.31,
+    "der": 20.82,
+    "ratio_1": 0.4,
+    "ratio_2": 0.6,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "c1cc(OCC2OC2)cc(OCC3OC3)c1OCC4OC4",
+    "monomer2": "N(CCN)(CCN)CCN",
+    "reason": "Revised to increase crosslink density and network rigidity. Monomer1 is a rigid aromatic triglycidyl (1,3,5-tris(glycidyloxy)benzene-like) bearing three epoxide rings (epoxide motifs written as C2OC2, C3OC3, C4OC4) to supply multiple C1OC1-type reactive sites and raise modulus/Tg. Monomer2 is tris(2-aminoethyl)amine (TREN) containing multiple NC linkages (multiple N–C connections/amine nucleophiles) to provide high functionality for epoxy curing. Epoxy (monomer1) — amine (monomer2) chemistry is highly compatible; the increased multifunctionality and the rigid aromatic core should raise Er (crosslink density) and move Tg toward the 100 °C target while addressing the previously low Er.",
+    "predicted_tg": 100.28,
+    "predicted_er": 48.06,
+    "dtg": 0.28,
+    "der": 1.94,
+    "ratio_1": 0.6,
+    "ratio_2": 0.4,
+    "within_property_tolerance": true,
+    "suggest_follow_up_agent": false
+  }
+}

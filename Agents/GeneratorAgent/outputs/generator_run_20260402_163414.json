@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 150,
+    "target_er": 75,
+    "group1": "C=C",
+    "group2": "CCS"
+  },
+  "initial": {
+    "monomer1": "CC(C)(c1ccc(OC(=O)C=C)cc1)c2ccc(OC(=O)C=C)cc2",
+    "monomer2": "HSCCc1ccc(CCSH)cc1",
+    "reason": "Monomer1 is bisphenol-A diacrylate (two acrylate C=C groups) — rigid, aromatic backbone to raise Tg toward 150°C and two vinyl-type reactive sites for high crosslink density (increasing Er). Monomer2 is para-bis(2-mercaptoethyl)benzene (two thiol groups, dithiol) — provides at least two thiol reactive sites (CCS-type thiol fragments) for thiol–ene/thiol–acrylate coupling with monomer1. The combination enables efficient thiol–ene/acrylate crosslinking, high network rigidity (high Tg) and substantial crosslink density (high Er ≈ 75). Both SMILES are synthesizable and chemically compatible.",
+    "predicted_tg": null,
+    "predicted_er": null,
+    "dtg": null,
+    "der": null,
+    "ratio_1": null,
+    "ratio_2": null,
+    "within_property_tolerance": null,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "C(c1ccc(cc1)C=C)(c2ccc(cc2)C=C)(c3ccc(cc3)C=C)(c4ccc(cc4)C=C)",
+    "monomer2": "c1c(cc(cc1CCS)CCS)CCS",
+    "reason": "Revised to raise Tg and Er by increasing aromatic/rigid content and multifunctionality. Monomer1 is a tetrafunctional aromatic vinyl (four C=C vinyl groups) to provide high crosslink density and rigid phenyl content (raises Tg toward 150 and increases Er). Monomer2 is 1,3,5-tris(2-mercaptoethyl)benzene (three CCS-bearing arms, each contains the 'CCS' motif repeated three times) giving trifunctional thiol reactivity to promote dense thiol–ene crosslinking with the vinyl monomer (increases Er). Both SMILES are chemically plausible and synthesizable; required functional groups are present multiple times and the pair (C=C, CCS) is compatible for thiol–ene thermoset formation.",
+    "predicted_tg": 140.53,
+    "predicted_er": 27.22,
+    "dtg": 9.47,
+    "der": 47.78,
+    "ratio_1": 0.2,
+    "ratio_2": 0.8,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

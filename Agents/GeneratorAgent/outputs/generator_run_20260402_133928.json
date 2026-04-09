@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "target_tg": 175,
+    "target_er": 100,
+    "group1": "C1OC1",
+    "group2": "NC"
+  },
+  "initial": {
+    "monomer1": "OCC1OC1c2ccc(OCC3OC3)cc2",
+    "monomer2": "Nc1ccc(cc1)S(=O)(=O)c2ccc(cc2)N",
+    "reason": "Monomer1 is a bis(glycidyloxy)benzene (two oxirane rings present: C1OC1 and C3OC3) providing diepoxide functionality for crosslinking. Monomer2 is 4,4'-diaminodiphenylsulfone (two primary amines, NC-type reactive sites) — an aromatic, rigid diamine that reacts readily with epoxides. The epoxy (oxirane)–amine pairing yields a highly crosslinked thermoset; the aromatic/sulfone core and bifunctionality raise Tg toward ~175°C and increase modulus (Er ~100 MPa) via high crosslink density and rigid network segments.",
+    "predicted_tg": 176.09,
+    "predicted_er": 44.17,
+    "dtg": 1.09,
+    "der": 55.83,
+    "ratio_1": 0.8,
+    "ratio_2": 0.2,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  },
+  "best": {
+    "monomer1": "c4c(OCC1OC1)cc(OCC2OC2)cc4OCC3OC3",
+    "monomer2": "NCCNCCNCCN",
+    "reason": "Revised to an epoxy-rich, rigid aromatic epoxy monomer (monomer1) and a multi-amine aliphatic crosslinker (monomer2) to fix the earlier issues. Monomer1 contains three glycidyl/epoxide motifs including the required C1OC1 fragment (OCC1OC1, OCC2OC2, OCC3OC3) to provide multiple epoxy reactive sites for network formation and increased network stiffness (higher Tg, higher Er). Monomer2 is a polyamine (triethylenetetramine, TETA; SMILES NCCNCCNCCN) that presents multiple NC-type amine nucleophiles (several N–C linkages) to react efficiently with the epoxide rings; the multiplicity of amine groups increases crosslink density (raising Er toward target) and ensures epoxy–amine compatibility (C1OC1 / NC pair). Overall the pair is synthetically plausible, chemically compatible for thermoset formation, and increases both Tg and elastic modulus by combining an aromatic, multi-epoxy monomer with a high-functionality polyamine hardener.",
+    "predicted_tg": 163.66,
+    "predicted_er": 63.73,
+    "dtg": 11.34,
+    "der": 36.27,
+    "ratio_1": 0.1,
+    "ratio_2": 0.9,
+    "within_property_tolerance": false,
+    "suggest_follow_up_agent": true
+  }
+}

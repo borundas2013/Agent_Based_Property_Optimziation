@@ -23,7 +23,7 @@ def evaluate_revised_candidate(
 
     original_prop = original_result.get("property_details", {})
     tol_tg = float(original_prop.get("tol_tg", 10.0))
-    tol_er = float(original_prop.get("tol_er", 10.0))
+    tol_er = float(original_prop.get("tol_er", 5.0))
 
     pred = check_tg_er_properties(
         revised_m1,

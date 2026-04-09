@@ -80,7 +80,7 @@ def validate_revised_candidate(revised_m1, revised_m2):
     result["canonical"]["monomer_1"] = c1
     result["canonical"]["monomer_2"] = c2
 
-    # 2. Reactive preservation
+   # 2. Reactive preservation
     has_reaction, pattern1, pattern2 = has_reaction_constraints(revised_m1, revised_m2)
     if not has_reaction:
         result["valid"] = False
@@ -98,4 +98,11 @@ def validate_revised_candidate(revised_m1, revised_m2):
     #     result["errors"].append("low_similarity")
 
     return result
+
+
+if __name__ == "__main__":
+    monomer_1 = "CC(C)(c1ccc(OCC2CO2)cc1)c1ccc(OCC2CO2)cc1"
+    monomer_2 = "Nc1ccc(S(=O)(=O)c2ccc(N)cc2)cc1"
+    result = validate_revised_candidate(monomer_1, monomer_2)
+    print(result)
 
